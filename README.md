@@ -24,7 +24,7 @@ Manejo de transacciones:
 Antes, el Main gestionaba manualmente las transacciones con entityManager.getTransaction().begin() y entityManager.getTransaction().commit(). Con el patrón DAO, esta responsabilidad la he movido a las clases DAO, lo que ha simplificado el código del Main.
 
 # Pregunta 4
-![imagen_2025-02-23_174812956.png]
+![Imagen diagrama de clases](imagen_2025-02-23_174812956.png).
 
 # Pregunta 5
 La clase abstracta (GenDAOImpl) es fundamental en el patrón DAO porque centraliza la lógica común (CRUD, transacciones) y evita duplicar código. No es 100% necesaria, pero es muy útil cuando hay múltiples DAOs o se busca reutilizar código.
